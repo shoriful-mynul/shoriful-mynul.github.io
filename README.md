@@ -1,41 +1,21 @@
-# Shoriful Islam — Personal Portfolio
+# Shoriful Islam — Portfolio
 
-A responsive, dark-themed personal portfolio built with plain HTML, CSS and JavaScript for GitHub Pages.
+GitHub Pages portfolio for `shoriful-mynul`.
 
-## Repository
+Repository: `shoriful-mynul.github.io`
 
-For a GitHub user site, the repository should be:
+Live site: `https://shoriful-mynul.github.io`
 
-`shoriful-mynul.github.io`
+Upload the contents of this folder to the repository root. Do not upload the ZIP as the website source.
 
-The live address will be:
+## Personal details configured
+- GitHub: https://github.com/shoriful-mynul
+- LinkedIn: https://www.linkedin.com/in/shoriful2007
+- Email: mynul.shoriful@gmail.com
 
-`https://shoriful-mynul.github.io`
-
-## Before publishing
-
-Replace these placeholders in `index.html`:
-
-- `YOUR_EMAIL@example.com`
-- `https://www.linkedin.com/`
-- Project titles/descriptions/links
-- `assets/resume/shoriful-islam-cv.pdf` with your actual CV
-- The `SI` avatar with your own profile photo if you want one
-
-## Deploy
-
-1. Create a public repository named `shoriful-mynul.github.io`.
-2. Upload the contents of this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under the build/deployment section, choose **GitHub Actions** or the branch-based Pages option available to your repository.
-5. Wait for deployment, then open `https://shoriful-mynul.github.io`.
-
-GitHub Pages can take a few minutes to publish after the first deployment.
-
-## Structure
-
-- `index.html` — website content
-- `css/style.css` — design and responsive layout
-- `js/script.js` — navigation and active-section behavior
-- `assets/images/` — profile/project images
-- `assets/resume/` — CV
+## Still to add
+- Exact project repository link for Google Search Ranking & Discoverability Intelligence
+- Exact research paper link, once available
+- Exact certificate/credential URLs
+- Personal Google Scholar profile URL, if available
+- Real CV PDF and profile photo
