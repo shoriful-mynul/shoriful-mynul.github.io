@@ -1,21 +1,44 @@
-# Shoriful Islam — Portfolio
+# Shoriful Islam — Personal Portfolio v3
 
-GitHub Pages portfolio for `shoriful-mynul`.
+A redesigned, responsive personal portfolio for GitHub Pages. Built from scratch with HTML, CSS, and vanilla JavaScript.
 
-Repository: `shoriful-mynul.github.io`
+## Highlights
 
-Live site: `https://shoriful-mynul.github.io`
+- Full visual redesign rather than a text-only update
+- Dark graphite + gold academic/technical aesthetic
+- Responsive desktop/tablet/mobile layouts
+- Sticky navigation with active section state
+- Scroll progress indicator
+- Animated reveal-on-scroll sections
+- Hero technology illustration built with CSS
+- Experience timeline/cards
+- Skills toolkit cards
+- Featured project presentation
+- Research interests section with orbit visual
+- Achievement grid prepared for credential links
+- Contact CTA and social links
+- No framework or build step required
 
-Upload the contents of this folder to the repository root. Do not upload the ZIP as the website source.
+## Repository
 
-## Personal details configured
-- GitHub: https://github.com/shoriful-mynul
-- LinkedIn: https://www.linkedin.com/in/shoriful2007
-- Email: mynul.shoriful@gmail.com
+GitHub username: `shoriful-mynul`
 
-## Still to add
-- Exact project repository link for Google Search Ranking & Discoverability Intelligence
-- Exact research paper link, once available
-- Exact certificate/credential URLs
-- Personal Google Scholar profile URL, if available
-- Real CV PDF and profile photo
+Recommended user-site repository: `shoriful-mynul.github.io`
+
+## Deployment
+
+Upload the extracted contents of this folder to the root of the GitHub repository. Do not upload the ZIP as the website source.
+
+Then enable GitHub Pages from **Settings → Pages → Deploy from a branch → main → /(root)**.
+
+## Personalization still to add later
+
+- Profile photo
+- Final CV PDF
+- Real GitHub repository URL for the Google Search Ranking project
+- Research paper URL for the Google Search Ranking project
+- Google Scholar profile URL
+- Credential/certificate URLs for the eight achievements
+- Additional projects as they are completed
+
+No fake metrics, paper links, repository links, or credentials have been added.
