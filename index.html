@@ -1,261 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shoriful Islam — CS Student &amp; AI/ML Researcher-in-training</title>
-  <meta name="description" content="Shoriful Islam (Mynul Munshi) — First-year Computer Science student at COMSATS University Islamabad, working on AI, machine learning, agentic systems, and robotics.">
-  <meta name="theme-color" content="#F5F2EA">
-
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Shoriful Islam — CS Student &amp; AI/ML Researcher-in-training">
-  <meta property="og:description" content="First-year Computer Science student at COMSATS University Islamabad. Working on AI, machine learning, agentic systems, and robotics.">
-  <meta property="og:type" content="website">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0c10" />
+  <meta name="description" content="Shoriful Islam — Computer Science student focused on AI, Machine Learning, research, and intelligent systems." />
+  <meta name="author" content="Shoriful Islam" />
+  <meta property="og:title" content="Shoriful Islam | CS • AI • Research" />
+  <meta property="og:description" content="Personal portfolio of Shoriful Islam, a Computer Science student exploring AI, Machine Learning, research, and intelligent systems." />
+  <meta property="og:type" content="website" />
+  <title>Shoriful Islam | CS • AI • Research</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-bg" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- ============ INDEX TAB NAVIGATION ============ -->
-  <header class="index-nav" id="index-nav">
-    <div class="index-nav__brand">
-      <a href="#top" class="index-nav__mark" aria-label="Back to top">SI</a>
-    </div>
-
-    <nav class="index-nav__tabs" aria-label="Primary">
-      <ul>
-        <li><a href="#focus" class="tab" data-tab="focus"><span class="tab__label">Focus</span></a></li>
-        <li><a href="#projects" class="tab" data-tab="projects"><span class="tab__label">Projects</span></a></li>
-        <li><a href="#education" class="tab" data-tab="education"><span class="tab__label">Education</span></a></li>
-        <li><a href="#log" class="tab" data-tab="log"><span class="tab__label">Currently</span></a></li>
-        <li><a href="#contact" class="tab" data-tab="contact"><span class="tab__label">Contact</span></a></li>
-      </ul>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Shoriful Islam home">
+      <span class="brand-mark">SI</span>
+      <span class="brand-text">SHORIFUL <b>ISLAM</b></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#research" class="nav-link">Research</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
-
-    <button class="index-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="index-nav">
-      <span></span><span></span><span></span>
-      <span class="sr-only">Open menu</span>
-    </button>
+    <div class="top-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle visual theme" title="Toggle theme">◐</button>
+      <a class="outline-btn compact" href="#contact">Let's Talk <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    </div>
   </header>
 
-  <main id="main">
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+  </div>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <div class="hero__text">
-        <p class="eyebrow">Islamabad, Pakistan &middot; est. binder 2026</p>
-        <h1 class="hero__name">Shoriful Islam</h1>
-        <p class="hero__aka">also known as Mynul Munshi</p>
-        <p class="hero__role">First&#8209;year Computer Science student, COMSATS University Islamabad</p>
-        <p class="hero__thesis">
-          I'm early in a CS degree and spending it on the parts that felt most worth learning first:
-          how intelligent systems are built, how they fail, and how to engineer them carefully rather
-          than chase whatever's trending. This page is a running notebook, not a highlight reel —
-          it'll get more interesting as the work does.
-        </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#projects">See what I'm building</a>
-          <a class="btn btn--ghost" href="assets/resume/cv.pdf" download>Download CV</a>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> Computer Science Student · AI · Research</div>
+        <h1>Building with <span>curiosity.</span><br>Learning with purpose.</h1>
+        <p class="hero-lead">I'm <strong>Shoriful Islam</strong>, a Computer Science student exploring Artificial Intelligence, Machine Learning, research, and intelligent systems through projects and hands-on learning.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#projects">Explore My Work <span>→</span></a>
+          <a class="outline-btn" href="#experience">View Experience</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>3</strong><span>Professional Experiences</span></div>
+          <div><strong>8</strong><span>Selected Achievements</span></div>
+          <div><strong>∞</strong><span>Things to Learn</span></div>
         </div>
       </div>
 
-      <div class="hero__diagram" aria-hidden="true">
-        <svg viewBox="0 0 480 480" class="node-graph" role="img" aria-label="">
-          <g class="node-graph__edges" stroke="var(--signal)" stroke-width="1">
-            <line x1="90" y1="120" x2="230" y2="90" />
-            <line x1="90" y1="120" x2="150" y2="260" />
-            <line x1="230" y1="90" x2="370" y2="140" />
-            <line x1="230" y1="90" x2="150" y2="260" />
-            <line x1="150" y1="260" x2="300" y2="300" />
-            <line x1="370" y1="140" x2="300" y2="300" />
-            <line x1="300" y1="300" x2="230" y2="400" />
-            <line x1="150" y1="260" x2="230" y2="400" />
-            <line x1="370" y1="140" x2="400" y2="280" />
-            <line x1="300" y1="300" x2="400" y2="280" />
-          </g>
-          <g class="node-graph__nodes" fill="var(--ink)">
-            <circle class="node" cx="90" cy="120" r="7" style="--d:0s" />
-            <circle class="node" cx="230" cy="90" r="5" style="--d:.4s" />
-            <circle class="node" cx="370" cy="140" r="6" style="--d:.8s" />
-            <circle class="node" cx="150" cy="260" r="8" style="--d:.2s" />
-            <circle class="node" cx="300" cy="300" r="6" style="--d:.6s" />
-            <circle class="node" cx="230" cy="400" r="5" style="--d:1s" />
-            <circle class="node" cx="400" cy="280" r="5" style="--d:.3s" />
-          </g>
-        </svg>
-        <p class="hero__diagram-caption">a small graph, mid-thought</p>
+      <div class="hero-visual reveal delay-1" aria-label="Abstract technology illustration">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="tech-card main-tech">
+          <div class="window-bar"><i></i><i></i><i></i><span>intelligent_system.py</span></div>
+          <pre><code><span class="kw">class</span> <span class="fn">LearningSystem</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.focus = [
+          <span class="str">"AI"</span>, <span class="str">"Research"</span>,
+          <span class="str">"Real-world impact"</span>
+        ]
+
+    <span class="kw">def</span> <span class="fn">build</span>(self, idea):
+        <span class="kw">return</span> experiment(idea)</code></pre>
+          <div class="tech-footer"><span>● Learning</span><span>Python · ML</span></div>
+        </div>
+        <div class="float-card float-ai"><span class="float-icon">✦</span><b>AI / ML</b><small>Exploring</small></div>
+        <div class="float-card float-research"><span class="float-icon">⌁</span><b>Research</b><small>Building foundations</small></div>
+        <div class="grid-ring"></div>
       </div>
     </section>
 
-    <!-- ============ FOCUS / RESEARCH INTERESTS ============ -->
-    <section class="section" id="focus">
-      <div class="section__head">
-        <p class="section__tag">§ Focus</p>
-        <h2 class="section__title">What I'm paying attention to</h2>
-      </div>
-
-      <div class="focus-grid">
-        <article class="focus-card">
-          <p class="focus-card__mark">AI</p>
-          <h3>Artificial Intelligence &amp; Machine Learning</h3>
-          <p>The fundamentals first — how models learn, where they break, and why. Less interested in the hype cycle than in being able to reason about a system from first principles.</p>
-        </article>
-        <article class="focus-card">
-          <p class="focus-card__mark">AG</p>
-          <h3>Agentic Systems</h3>
-          <p>Software that has to plan, use tools, and recover from its own mistakes. I'm curious about the engineering discipline this demands, not just the demo.</p>
-        </article>
-        <article class="focus-card">
-          <p class="focus-card__mark">RB</p>
-          <h3>Robotics &amp; Intelligent Systems</h3>
-          <p>Where perception, control, and reasoning meet the physical world — and where a lot of comfortable assumptions from pure software stop holding.</p>
-        </article>
-        <article class="focus-card">
-          <p class="focus-card__mark">SE</p>
-          <h3>Software Engineering</h3>
-          <p>Research ideas are only as good as the code that carries them. I care about writing things that are readable, testable, and still make sense in six months.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section class="section section--tinted" id="projects">
-      <div class="section__head">
-        <p class="section__tag">§ Field notes</p>
-        <h2 class="section__title">Projects</h2>
-        <p class="section__note">A working set, not a finished archive — replace these cards with real project write-ups as they ship.</p>
-      </div>
-
-      <div class="card-grid">
-
-        <article class="project-card">
-          <div class="project-card__head">
-            <span class="stamp stamp--active">in progress</span>
-            <span class="project-card__meta">2026</span>
+    <section class="section-shell about-section" id="about">
+      <div class="section-heading reveal"><span class="section-kicker">01 · ABOUT</span><h2>Curious by nature.<br><span>Driven by learning.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="large-copy">I’m a Computer Science student at <strong>COMSATS University Islamabad</strong> with a growing focus on AI, Machine Learning, research, and intelligent systems.</p>
+          <p>I enjoy turning questions into projects, learning the foundations behind the technology I use, and gradually moving from implementation toward deeper technical and research work.</p>
+          <p>My current goal is simple: build strong fundamentals, create useful things, and develop the ability to contribute to meaningful research and real-world systems.</p>
+          <div class="about-links"><a href="https://github.com/shoriful-mynul" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/shoriful2007" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mynul.shoriful@gmail.com">Email ↗</a></div>
+        </div>
+        <div class="about-panel reveal delay-1">
+          <div class="profile-card">
+            <div class="profile-avatar">SI</div>
+            <div><span>Currently</span><strong>Computer Science Student</strong><small>COMSATS University Islamabad</small></div>
           </div>
-          <h3>Project title one</h3>
-          <p>One or two sentences on the problem this project tackles and the approach taken — written for someone who has never seen it before.</p>
-          <ul class="tag-row">
-            <li>Python</li>
-            <li>PyTorch</li>
-          </ul>
-          <div class="project-card__links">
-            <a href="#" class="link-arrow">Repository →</a>
+          <div class="info-grid">
+            <div class="info-item"><span>Focus</span><strong>AI · ML · Research</strong></div>
+            <div class="info-item"><span>Interests</span><strong>Intelligent Systems</strong></div>
+            <div class="info-item"><span>Based in</span><strong>Islamabad, Pakistan</strong></div>
+            <div class="info-item"><span>Mindset</span><strong>Learn · Build · Share</strong></div>
           </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__head">
-            <span class="stamp stamp--prototype">prototype</span>
-            <span class="project-card__meta">2026</span>
-          </div>
-          <h3>Project title two</h3>
-          <p>What it does, what was hard about it, and what you'd do differently next time. Specifics beat adjectives here.</p>
-          <ul class="tag-row">
-            <li>C++</li>
-            <li>ROS</li>
-          </ul>
-          <div class="project-card__links">
-            <a href="#" class="link-arrow">Repository →</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__head">
-            <span class="stamp stamp--coursework">coursework</span>
-            <span class="project-card__meta">2026</span>
-          </div>
-          <h3>Project title three</h3>
-          <p>A class project worth keeping — the assignment, and the part you extended past what was asked.</p>
-          <ul class="tag-row">
-            <li>JavaScript</li>
-          </ul>
-          <div class="project-card__links">
-            <a href="#" class="link-arrow">Repository →</a>
-          </div>
-        </article>
-
-        <article class="project-card project-card--placeholder">
-          <div class="project-card__head">
-            <span class="stamp stamp--next">next up</span>
-          </div>
-          <h3>The next entry goes here</h3>
-          <p>Open slot. Add a card each time something ships — the notebook is more convincing full than tidy.</p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ============ EDUCATION ============ -->
-    <section class="section" id="education">
-      <div class="section__head">
-        <p class="section__tag">§ Record</p>
-        <h2 class="section__title">Education</h2>
-      </div>
-
-      <div class="edu-entry">
-        <div class="edu-entry__line" aria-hidden="true"></div>
-        <div class="edu-entry__body">
-          <h3>BS Computer Science</h3>
-          <p class="edu-entry__org">COMSATS University Islamabad</p>
-          <p class="edu-entry__meta">First&#8209;year &middot; Islamabad, Pakistan</p>
-          <p>Coursework so far has centered on programming fundamentals and discrete structures, with self-directed study running alongside in machine learning and robotics.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ CURRENTLY / LOG ============ -->
-    <section class="section section--tinted" id="log">
-      <div class="section__head">
-        <p class="section__tag">§ Open loop</p>
-        <h2 class="section__title">Currently</h2>
-      </div>
-
-      <ul class="log-list">
-        <li><span class="log-list__kind">reading</span> Add the paper, book, or course you're currently working through.</li>
-        <li><span class="log-list__kind">building</span> Add what's on the workbench right now.</li>
-        <li><span class="log-list__kind">learning</span> Add a skill or tool you're actively picking up.</li>
-      </ul>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section contact" id="contact">
-      <div class="section__head">
-        <p class="section__tag">§ Reach</p>
-        <h2 class="section__title">Get in touch</h2>
-        <p class="section__note">Open to research assistantships, collaborations, and honest conversations about what I'm working on.</p>
-      </div>
-
-      <div class="contact-grid">
-        <a class="contact-item" href="mailto:shoriful.mynul@gmail.com">
-          <span class="contact-item__label">Email</span>
-          <span class="contact-item__value">shoriful.mynul@gmail.com</span>
-        </a>
-        <a class="contact-item" href="https://github.com/shoriful-mynul" target="_blank" rel="noopener">
-          <span class="contact-item__label">GitHub</span>
-          <span class="contact-item__value">@shoriful&#8209;mynul</span>
-        </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/shoriful-mynul" target="_blank" rel="noopener">
-          <span class="contact-item__label">LinkedIn</span>
-          <span class="contact-item__value">/in/shoriful&#8209;mynul</span>
-        </a>
+    <section class="section-shell" id="experience">
+      <div class="section-heading split reveal"><div><span class="section-kicker">02 · EXPERIENCE</span><h2>Where I’ve <span>learned by doing.</span></h2></div><p>Selected roles that shaped my technical, research, and communication experience.</p></div>
+      <div class="experience-list">
+        <article class="experience-card reveal"><div class="exp-date">JUL 2026 — AUG 2026</div><div class="exp-index">01</div><div class="exp-content"><h3>ML Engineering Intern</h3><h4>FlyRank AI</h4><p>Worked in a machine learning engineering environment, developing practical skills around data, ML workflows, experimentation, and real-world technical problem solving.</p><div class="tags"><span>Machine Learning</span><span>Python</span><span>Data</span></div></div><span class="exp-arrow">↗</span></article>
+        <article class="experience-card reveal delay-1"><div class="exp-date">JUN 2025 — AUG 2025</div><div class="exp-index">02</div><div class="exp-content"><h3>REYES Research Intern</h3><h4>University of California, Berkeley</h4><p>Participated in a research-focused internship through Python4Physics, building experience with Python, scientific problem solving, computational thinking, and research practice.</p><div class="tags"><span>Research</span><span>Python</span><span>Scientific Computing</span></div></div><span class="exp-arrow">↗</span></article>
+        <article class="experience-card reveal delay-2"><div class="exp-date">MAR 2025 — JUL 2025</div><div class="exp-index">03</div><div class="exp-content"><h3>Volunteer Judge</h3><h4>The Queen’s Commonwealth Essay Competition</h4><p>Reviewed and evaluated student submissions as a volunteer judge, developing experience in critical reading, structured evaluation, and written communication.</p><div class="tags"><span>Evaluation</span><span>Writing</span><span>Communication</span></div></div><span class="exp-arrow">↗</span></article>
       </div>
     </section>
 
+    <section class="section-shell skills-section" id="skills">
+      <div class="section-heading reveal"><span class="section-kicker">03 · TOOLKIT</span><h2>Tools I use to <span>build.</span></h2></div>
+      <div class="skills-grid">
+        <div class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Programming</h3><p>Python · C · C++ · Java · JavaScript · Bash</p><div class="meter"><span style="width:88%"></span></div></div>
+        <div class="skill-card reveal delay-1"><div class="skill-icon">✦</div><h3>AI & Data</h3><p>Machine Learning · Pandas · NumPy · scikit-learn · Data Analysis</p><div class="meter"><span style="width:82%"></span></div></div>
+        <div class="skill-card reveal delay-2"><div class="skill-icon">⌁</div><h3>Cloud & Data Engineering</h3><p>Google Cloud · Vertex AI · AutoML · Databricks · Delta Lake</p><div class="meter"><span style="width:76%"></span></div></div>
+        <div class="skill-card reveal"><div class="skill-icon">◫</div><h3>Web & Analytics</h3><p>HTML · CSS · JavaScript · WordPress · SEO · Google Analytics · Looker Studio</p><div class="meter"><span style="width:78%"></span></div></div>
+        <div class="skill-card reveal delay-1"><div class="skill-icon">⌘</div><h3>Tools & Workflow</h3><p>Git · GitHub · Jupyter · VS Code · Linux · Notebooks</p><div class="meter"><span style="width:84%"></span></div></div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="projects">
+      <div class="section-heading split reveal"><div><span class="section-kicker">04 · PROJECTS</span><h2>Things I’ve <span>built.</span></h2></div><p>Projects will grow here as I learn, experiment, and turn ideas into working systems.</p></div>
+      <div class="project-feature reveal">
+        <div class="project-number">01</div><div class="project-body"><div class="project-label">MACHINE LEARNING · DATA INTELLIGENCE</div><h3>Google Search Ranking & Discoverability Intelligence</h3><p> A machine learning-based search intelligence system designed to analyze real search performance data, identify content opportunities, rank pages for review, and generate evidence-based recommendations.</p><div class="project-tags"><span>Python</span><span>Pandas</span><span>DuckDB</span><span>scikit-learn</span><span>Jupyter</span><span>Hugging Face</span><span>Data Visualization</span></div><div class="project-actions"><button class="ghost-disabled" disabled>GitHub · Add Repository</button><button class="ghost-disabled" disabled>Research Paper · Add Link</button></div></div><div class="project-visual"><div class="chart"><span style="height:32%"></span><span style="height:52%"></span><span style="height:44%"></span><span style="height:70%"></span><span style="height:61%"></span><span style="height:86%"></span><span style="height:76%"></span></div><div class="chart-label">SEARCH SIGNALS <b>↗</b></div></div>
+      </div>
+      <div class="project-grid">
+        <article class="mini-project reveal"><span class="project-index">02</span><div><span class="project-label">WEB · PERSONAL BRAND</span><h3>Shoriful Islam — Personal Portfolio</h3><p>A responsive personal portfolio bringing together technical work, research interests, experience, achievements, and ongoing learning.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div><div class="project-links"><a href="https://github.com/shoriful-mynul/shoriful-mynul.github.io" target="_blank" rel="noopener">GitHub ↗</a><a href="https://shoriful-mynul.github.io" target="_blank" rel="noopener">Live Demo ↗</a></div></div></article>
+        <article class="mini-project placeholder reveal delay-1"><span class="project-index">03</span><div><span class="project-label">COMING NEXT</span><h3>More experiments, research, and builds.</h3><p>This space is intentionally ready for the next project. As you complete new work, we can turn each one into a concise, evidence-based case study.</p><a class="text-link" href="mailto:mynul.shoriful@gmail.com?subject=Project%20update">Have a project to add? ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="section-shell research-wrap" id="research">
+      <div class="section-heading reveal"><span class="section-kicker">05 · RESEARCH</span><h2>Learning how to <span>ask better questions.</span></h2></div>
+      <div class="research-grid">
+        <div class="research-copy reveal"><p class="large-copy">I’m building my research foundation step by step: understanding technical literature, formulating questions, designing experiments, analyzing evidence, and communicating findings clearly.</p><p>My interests sit at the intersection of intelligent software and real-world systems. I’m especially interested in AI and ML, Agentic AI, intelligent systems, robotics, embedded systems, and computer systems.</p><div class="research-cta"><span class="research-status">● Currently learning</span><span>Research methodology · ML foundations · Technical reading</span></div></div>
+        <div class="interest-orbit reveal delay-1"><div class="orbit-center">RESEARCH<br><small>INTERESTS</small></div><div class="interest i1">AI</div><div class="interest i2">ML</div><div class="interest i3">AGENTS</div><div class="interest i4">ROBOTICS</div><div class="interest i5">SYSTEMS</div></div>
+      </div>
+      <div class="scholar-card reveal"><div><span class="section-kicker">ACADEMIC PROFILE</span><h3>Google Scholar</h3><p>Once your Scholar profile is ready, we can connect it here for publications, citations, and research updates.</p></div><button class="ghost-disabled" disabled>Scholar Profile · Add Link</button></div>
+    </section>
+
+    <section class="section-shell" id="achievements">
+      <div class="section-heading split reveal"><div><span class="section-kicker">06 · ACHIEVEMENTS</span><h2>Milestones worth <span>remembering.</span></h2></div><p>Selected scholarships, awards, and recognitions from academic, leadership, and global programs.</p></div>
+      <div class="achievement-grid">
+        <article class="achievement-card reveal"><span class="ach-no">01</span><div><h3>Saudi Govt. Scholarship Awardee</h3><p>Ministry of Education, Saudi Arabia</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal delay-1"><span class="ach-no">02</span><div><h3>Opendoors Scholar</h3><p>Russian Scholarship Project · Global Universities Association</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal delay-2"><span class="ach-no">03</span><div><h3>Allama Iqbal Scholar</h3><p>Pakistan-Bangladesh Knowledge Corridor · HEC Pakistan</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal"><span class="ach-no">04</span><div><h3>Gold Awardee</h3><p>The Queen’s Commonwealth Essay Competition 2025</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal delay-1"><span class="ach-no">05</span><div><h3>Regional Top 6 Scorer · Bangladesh</h3><p>International Finance Olympiad 2025</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal delay-2"><span class="ach-no">06</span><div><h3>Distinction Awardee</h3><p>International Environmental Olympiad 2025</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal"><span class="ach-no">07</span><div><h3>3Zero Leadership Challenge Awardee</h3><p>Hiroshima University, Japan</p></div><button disabled>Credential ↗</button></article>
+        <article class="achievement-card reveal delay-1"><span class="ach-no">08</span><div><h3>Divisional Champion</h3><p>National Earth Olympiad 2025</p></div><button disabled>Credential ↗</button></article>
+      </div>
+    </section>
+
+    <section class="section-shell contact-section" id="contact">
+      <div class="contact-card reveal"><div class="contact-copy"><span class="section-kicker">07 · CONTACT</span><h2>Let’s build something<br><span>worth talking about.</span></h2><p>I’m open to learning opportunities, research conversations, technical collaborations, and interesting projects.</p><a class="primary-btn" href="mailto:mynul.shoriful@gmail.com?subject=Hello%20Shoriful">Send an Email <span>→</span></a></div><div class="contact-details"><a href="mailto:mynul.shoriful@gmail.com"><span>EMAIL</span><strong>mynul.shoriful@gmail.com</strong><b>↗</b></a><a href="https://www.linkedin.com/in/shoriful2007" target="_blank" rel="noopener"><span>LINKEDIN</span><strong>linkedin.com/in/shoriful2007</strong><b>↗</b></a><a href="https://github.com/shoriful-mynul" target="_blank" rel="noopener"><span>GITHUB</span><strong>github.com/shoriful-mynul</strong><b>↗</b></a></div></div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <p>Built by hand with HTML, CSS, and JS &middot; no framework, no build step.</p>
-    <p>&copy; <span id="year"></span> Shoriful Islam.</p>
-  </footer>
-
+  <footer><div>© <span id="year"></span> Shoriful Islam. All rights reserved.</div><div>Built with curiosity <span class="heart">♥</span> and code.</div></footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
   <script src="js/script.js"></script>
 </body>
 </html>
